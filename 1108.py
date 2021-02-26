@@ -27,3 +27,18 @@ class Solution(object):
             defanged_address_str += defanged_address_arr[i]
             
         return defanged_address_str
+
+"""
+2nd submission:
+Runtime: 16 ms, faster than 73.77% of Python online submissions for Defanging an IP Address.
+Memory Usage: 13.6 MB, less than 34.51% of Python online submissions for Defanging an IP Address.
+"""
+
+class Solution(object):
+    def defangIPaddr(self, address):
+        """
+        :type address: str
+        :rtype: str
+        """
+        address = address.replace(".","[.]")
+        return address
