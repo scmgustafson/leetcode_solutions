@@ -29,3 +29,24 @@ class Solution:
                 counter += 1
         
         return output
+
+"""
+2nd Submission:
+Runtime: 36 ms, faster than 95.55% of Python3 online submissions for Fizz Buzz.
+Memory Usage: 15.2 MB, less than 22.12% of Python3 online submissions for Fizz Buzz.
+"""
+class Solution:
+    def fizzBuzz(self, n: int) -> List[str]:
+        output = []
+        
+        for i in range(1, n+1):
+            if i % 3 == 0 and i % 5 == 0:
+                output.append("FizzBuzz")
+            elif i % 3 == 0:
+                output.append("Fizz")
+            elif i % 5 == 0:
+                output.append("Buzz")
+            else:
+                output.append(f"{i}")
+        
+        return output
